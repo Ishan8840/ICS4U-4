@@ -1,0 +1,14 @@
+.formula-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.formula-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

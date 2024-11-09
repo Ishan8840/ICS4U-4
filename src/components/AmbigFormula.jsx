@@ -2,7 +2,6 @@ import './AmbigFormula.css';
 import { useState } from 'react';
 
 function AmbigFormula() {
-
     const [angleA, setAngle] = useState(0);
     const [a, setA] = useState(0);
     const [b, setB] = useState(0);
@@ -10,15 +9,20 @@ function AmbigFormula() {
 
     function ambigFormula(e) {
         e.preventDefault();
+
         const h = b * Math.sin(angleA * (Math.PI / 180));
         let result;
 
         if (angleA === 90) {
             result = (a > b) ? "Right Triangle" : "No Triangle";
         } else if (angleA < 90) {
-            if (a < h) return "No Triangle";
-            if (a === h) return "Right Triangle";
-            result = (a >= b) ? "One Triangle" : "Two Triangles (ambiguous)";
+            if (a < h) {
+                result = "No Triangle";
+            } else if (a === h) {
+                result = "Right Triangle";
+            } else {
+                result = (a >= b) ? "One Triangle" : "Two Triangles (ambiguous)";
+            }
         } else {
             result = (a <= b) ? "No Triangle" : "One Triangle";
         }
@@ -40,6 +44,7 @@ function AmbigFormula() {
 
             <label>Triangle Type:</label>
             <input type="text" value={result} readOnly />
+
             <input type="submit" value="Calculate" />
         </form>
     )

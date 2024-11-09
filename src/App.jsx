@@ -5,15 +5,14 @@ import NewtonFormula from './components/NewtonFormula';
 import PolynomialFunction from './components/PolynomialFunction';
 
 function App() {
-
   return (
-    <>
+    <div className="formula-grid">
       <HeronFormula />
       <AmbigFormula />
       <NewtonFormula />
       <PolynomialFunction />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

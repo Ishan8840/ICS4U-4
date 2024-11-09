@@ -2,7 +2,6 @@ import './NewtonFormula.css';
 import { useState } from 'react';
 
 function NewtonFormula() {
-
     const [g, setG] = useState(0);
     const [result, setResult] = useState("Press Calulate");
 
@@ -28,6 +27,7 @@ function NewtonFormula() {
             if (Math.abs(funcValue) < tolerance) {
                 break;
             }
+
             currentGuess -= funcValue / dFuncValue;
         }
 
@@ -42,6 +42,7 @@ function NewtonFormula() {
 
             <label>Root Approximation (Result):</label>
             <input type="text" value={result} readOnly />
+
             <input type="submit" value="Calculate" />
         </form>
     )

@@ -2,7 +2,6 @@ import './HeronFormula.css';
 import { useState } from 'react';
 
 function HeronFormula() {
-
   const [a, setA] = useState(0);
   const [b, setB] = useState(0);
   const [c, setC] = useState(0);
@@ -27,6 +26,7 @@ function HeronFormula() {
 
       <label>Area Result:</label>
       <input type="text" value={area} readOnly />
+
       <input type="submit" value="Calculate" />
     </form>
   )

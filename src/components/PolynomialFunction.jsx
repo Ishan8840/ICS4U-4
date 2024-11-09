@@ -14,11 +14,9 @@ function PolynomialFunction() {
 
         const coeffArray = coeff.split(' ').map(Number);
         const expArray = exp.split(' ').map(Number);
-
         let expression = ["f(x) = ", 0];
 
         coeffArray.forEach((c, i) => {
-
             if (i > 0) {
                 expression[0] += (c >= 0 ? " + " : " - ");
             }
@@ -28,10 +26,8 @@ function PolynomialFunction() {
             expression[1] += c * (x ** expArray[i]);
         });
 
-
-        setPolynomial(`${expression[0]}`);
+        setPolynomial(expression[0]);
         setEvaluation(`f(${x}) = ${expression[1].toFixed(2)}`);
-
     }
 
     return (
