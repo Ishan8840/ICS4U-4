@@ -24,7 +24,7 @@ function HeronFormula() {
       <label>Side c:</label>
       <input type="number" min="0" value={c} onChange={(event) => { setC(event.target.value) }} required />
 
-      <label>Area Result:</label>
+      <label>Area (Result):</label>
       <input type="text" value={area} readOnly />
 
       <input type="submit" value="Calculate" />

@@ -1,6 +1,6 @@
 import './App.css';
 import HeronFormula from './components/HeronFormula';
-import AmbigFormula from './components/AmbigFormula';
+import AmbigCase from './components/AmbigCase';
 import NewtonFormula from './components/NewtonFormula';
 import PolynomialFunction from './components/PolynomialFunction';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="formula-grid">
       <HeronFormula />
-      <AmbigFormula />
+      <AmbigCase />
       <NewtonFormula />
       <PolynomialFunction />
     </div>
