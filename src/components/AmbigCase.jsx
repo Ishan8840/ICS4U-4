@@ -2,7 +2,7 @@ import './AmbigCase.css';
 import { useState } from 'react';
 
 function AmbigCase() {
-    const [angleA, setAngle] = useState(0);
+    const [angleA, setAngleA] = useState(0);
     const [a, setA] = useState(0);
     const [b, setB] = useState(0);
     const [result, setResult] = useState("Press Calulate");
@@ -34,7 +34,7 @@ function AmbigCase() {
         <form onSubmit={(e) => ambigCase(e)}>
             <h1>Ambiguous Case</h1>
             <label>Angle A:</label>
-            <input type="number" min="1" max="179" value={angleA} onChange={(event) => { setAngle(event.target.value) }} required />
+            <input type="number" min="1" max="179" value={angleA} onChange={(event) => { setAngleA(event.target.value) }} required />
 
             <label>Side a:</label>
             <input type="number" min="0" value={a} onChange={(event) => { setA(event.target.value) }} required />
