@@ -19,6 +19,7 @@ function NewtonFormula() {
 
             func.forEach((coef, x) => {
                 funcValue += coef * (currentGuess ** (func.length - x - 1));
+
                 if (x < dFunc.length) {
                     dFuncValue += dFunc[x] * (currentGuess ** (dFunc.length - x - 1));
                 }

@@ -32,10 +32,10 @@ function PolynomialFunction() {
     return (
         <form onSubmit={(e) => polynomialFunction(e)}>
             <h1>Polynomial Function</h1>
-            <label>Coefficients (space-seperated):</label>
+            <label>Coefficients (space-separated):</label>
             <input type="text" value={coeff} onChange={(event) => { setCoeff(event.target.value) }} required />
 
-            <label>Exponents (space-seperated):</label>
+            <label>Exponents (space-separated):</label>
             <input type="text" value={exp} onChange={(event) => { setExp(event.target.value) }} required />
 
             <label>x value:</label>
