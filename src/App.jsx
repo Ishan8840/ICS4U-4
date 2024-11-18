@@ -12,7 +12,7 @@ function App() {
       <NewtonFormula />
       <PolynomialFunction />
     </div>
-  );
+  )
 }
 
 export default App;

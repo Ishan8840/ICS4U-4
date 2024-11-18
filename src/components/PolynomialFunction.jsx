@@ -2,7 +2,6 @@ import './PolynomialFunction.css';
 import { useState } from 'react';
 
 function PolynomialFunction() {
-
     const [coeff, setCoeff] = useState("");
     const [exp, setExp] = useState("");
     const [x, setX] = useState(0);
